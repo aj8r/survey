@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <title>SURVEY FORM</title>
+  <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <h1 id="title">Survey Form (for research purposes of course)</h1>
+    <p id="description">Thank you for taking the time to fill this survey that is indeed, for research purposes.</p>
+      <form id="survey-form" action="/submit" method="POST">
+      <label id="name-label">Name:<input id="name" type="text" name="name" required placeholder="e.g Liam"><br>
+        <label id="email-label">Email<input id="email" type="email" name="email" required placeholder="e.g iamhot@real.com"><br>
+        <label id="number-label">Age:<input id="number" type="number" name="age" min="18" max="35" placeholder="e.g 50"><br>
+        <label for="dropdown">Pick a day<select id="dropdown" name="day">
+          <option value="option 1"disabled>Choose</option>
+          <option value="option 2">Thursday</option>
+          <option value="option 3">Friday</option>
+          <option value="option 4">Saturday</option></select><br>
+          <fieldset>
+            <p>Are you free next week?</p>
+          <label>
+            <input name="free" type="radio" value="yes">Yes</label>
+          <label>
+            <input name="free" type="radio" value="no">No</label>
+            <label>
+              <input name="free" type="radio" value="maybe">Maybe (stop playing)</label><br>
+            </fieldset>
+          <fieldset>
+            <p>Select your preference</p>
+          <label><input type="checkbox" value="restaurant" name="preference">Restaurant</label>
+          <label><input type="checkbox" value="picnic">Picnic</label>
+          <label><input type="checkbox" value="art gallery" name="preference">Art Gallery</label>
+          <label><input type="checkbox" value="clubbing" name="preference">Clubbing</label>
+          <label><input type="checkbox" value="theatre" name="preference">Theatre</label>
+          <label><input type="checkbox" value="sip n' paint" name="preference">Sip n' paint</label>
+          <label><input type="checkbox" value="other" name="preference">Other (specify)</label><br>
+          </fieldset>
+          <label for="comments">Any additional comments?</label><br>
+          <textarea id="comments" name="comments" rows="5" cols="50" placeholder="Yes, I'm asking you out"></textarea><br>
+          <input id="submit" type="submit" value="submit"></form>
